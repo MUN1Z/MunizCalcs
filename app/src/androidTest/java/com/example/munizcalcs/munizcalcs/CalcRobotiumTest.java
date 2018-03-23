@@ -44,6 +44,30 @@ public class CalcRobotiumTest extends ActivityInstrumentationTestCase2<MainActiv
         mSolo.clickOnButton("Calc");
         mSolo.waitForText("10");
     }
+
+    public void testCalcResultThree()
+    {
+        mSolo.enterText(0,"6");
+        mSolo.enterText(1,"5");
+        mSolo.clickOnButton("Calc");
+        mSolo.waitForText("11");
+    }
+
+    public void testCalcResultFour()
+    {
+        mSolo.enterText(0,"6");
+        mSolo.enterText(1,"6");
+        mSolo.clickOnButton("Calc");
+        mSolo.waitForText("12");
+    }
+
+    public void testCalcResultFive()
+    {
+        mSolo.enterText(0,"8");
+        mSolo.enterText(1,"5");
+        mSolo.clickOnButton("Calc");
+        mSolo.waitForText("13");
+    }
 }
 
 
